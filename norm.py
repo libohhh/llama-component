@@ -37,7 +37,7 @@ class RMSNorm(nn.Module):
         return output
 
 
-class CustomBatchNorm(torch.nn.Module):
+class BatchNorm(torch.nn.Module):
     def __init__(self, dim: int, eps: float=1e-5):
         super().__init__()
         self.dim = dim
